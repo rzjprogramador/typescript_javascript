@@ -1,0 +1,6 @@
+[
+  {
+    "tipagem_prototipos": "todos membros tem que ser opcionais",
+    "heranca_multipla_interfaces": "basta a interfaceAlvo extender outras interfaces separadas por virgula ,exemplo: `interface Alvo extends Type1, Type2`"
+  }
+]
