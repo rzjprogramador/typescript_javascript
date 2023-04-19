@@ -1,0 +1,9 @@
+---
+marp: true
+---
+
+pagina_oficial_docs: "https://deno.land/",
+atualizar: "`sudo deno upgrade`",
+atualizar_especifico: "`se desejar versao especifica - por enquanto nao necessario mas é : sudo deno upgrade --version 1.0.5`",
+
+---
