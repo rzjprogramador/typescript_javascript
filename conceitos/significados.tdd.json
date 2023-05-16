@@ -1,8 +1,0 @@
-[
-  {
-    "mock": ["clone", "fingidora"],
-    "sut": [
-      "funcionalidade entidade principal a ser testada sua acao nas suites de test."
-    ]
-  }
-]
