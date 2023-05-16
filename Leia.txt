@@ -1,6 +1,0 @@
-git tag -a "v1.0.1_modulesAux" -m "version v1.0.1_modulesAux" f6d5d71288d738a1ae3bdaa8667f380023992c40
-
-git push origin release_modulesAuxiliar --follow-tags
-
-usar este Raw
-https://raw.githubusercontent.com/rzjprogramador/modules_typescript/release_modulesAuxiliar/main.ts
