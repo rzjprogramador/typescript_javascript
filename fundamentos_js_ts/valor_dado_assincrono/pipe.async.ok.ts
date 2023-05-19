@@ -1,11 +1,3 @@
-// deno-lint-ignore-file no-explicit-any ban-types prefer-const
-
-/*
- * ts: PIPE COM ARG ASYNC PROMESSA QUE DORME ANTE DE DAR VALOR
- * tecnica: fazer uma Promessa que executa uma funcionalidade dentro de um setTimeout
- * Funcionalidade_Para_Demora_De_Um_Artefato: artefato que nova promessa , que tambem devolve funcao e opcao de escolha de tempo de espera
- */
-
 // deno-lint-ignore-file no-unused-vars no-explicit-any prefer-const ban-types require-await
 
 // PIPE ASYNC OK
