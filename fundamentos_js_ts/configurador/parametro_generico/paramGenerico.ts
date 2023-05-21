@@ -6,4 +6,10 @@ const funcaoNome = <F extends Param1>(data: F) => data;
 
 console.log(funcaoNome("foo"));
 
-// tutorial: https://stackoverflow.com/questions/62233382/how-do-i-define-and-call-a-generic-function-parameter-in-typescript
+/*
+macete: define o tipo do param generico antes dos () parenteses
+
+tutorial: https://stackoverflow.com/questions/62233382/how-do-i-define-and-call-a-generic-function-parameter-in-typescript
+
+*/
+
