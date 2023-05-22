@@ -1,5 +1,14 @@
 [
   {
+    titulo: "",
+    mensagem: "",
+    traducao: "",
+    codigo: "deno-ts()",
+    causa: "",
+    solucao: "",
+    solucao_narrada: "",
+  },
+  {
     titulo: "erro_tempo_real >> se_possivel_indefinido",
     mensagem: "is possibly 'undefined'",
     traducao: "é possivel que seja indefinido a variavel pode nao existir",
@@ -9,5 +18,14 @@
     solucao:
       "adicionar ```!``` add interrogacao apos variavel para afirmar que ela sera definida",
     solucao_narrada: "Afirmo Pode confiar que vai existir este artefato.",
+  },
+  {
+    titulo: "erro de atribuicoes em artefatoPAI SEM interface tipo",
+    mensagem: "is not assignable to parameter of type 'never'.deno-ts(2345)",
+    traducao: "não pode ser atribuído ao parâmetro do tipo 'nunca'",
+    codigo: "deno-ts(2345)",
+    causa: "ARTFATO SEM INTERFACE TIPO",
+    solucao: "CRIAR TIPO INTERFACE AO ARTEFATO PAI",
+    solucao_narrada: "",
   },
 ];
