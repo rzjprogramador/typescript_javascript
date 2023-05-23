@@ -3,6 +3,7 @@
     titulo: "",
     categoria: ["", ""],
     linguagem: "",
+    macete: "",
     estrategia: "",
     passos_logicos: ``,
     exemplo: ``,
@@ -10,7 +11,8 @@
   {
     titulo: "criando entidade com primitivos via metodo statico da classe",
     categoria: ["POO", "criacional", "statico"],
-    linguagem: "",
+    linguagem: "typescript",
+    macete: "os campos temq ue ser assinalados no construtor e no metodo igualmente, e aos instancias nao precisa apssar o do construtor só no metodo.",
     estrategia: "",
     passos_logicos: `
     # criando entidade com primitivos via metodo statico da classe:
@@ -58,7 +60,8 @@
   {
     titulo: "criando entidade com OBJETO via metodo statico da classe",
     categoria: ["POO", "criacional", "statico"],
-    linguagem: "",
+    linguagem: "typescript",
+    macete: "os campos temq ue ser assinalados no construtor e no metodo igualmente, e aos instancias nao precisa apssar o do construtor só no metodo.",
     estrategia: "",
     passos_logicos: `
     # criando entidade com objeto via metodo statico da classe:
