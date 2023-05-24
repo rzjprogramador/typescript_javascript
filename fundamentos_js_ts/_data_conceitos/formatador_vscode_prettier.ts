@@ -1,5 +1,7 @@
 /*
 
+tutoriais: ['https://www.getfishtank.com/blog/running-prettier-from-the-command-line', ]
+
 importante: para a formatacaoa contecer mais rapida insira um arquivo .prettierrc em cada projeto deno ts
 
 extensao: nao esquecer de ver se a extensao prettier esta corretamente instalada.
