@@ -35,6 +35,9 @@ const objConceitoImportMaps = {
 
       de_arquivo:
         "se o valorEndereco for até um <ARQUIVO.EXT> a variavel NÃO PODE TER BARRA NO SEU FINAL é #obrigatorio, #eviteErrar",
+
+      de_escopo:
+        `ela acessara os arquivos e diretorios dentro do escopo definido, este escopo tem como chave a variavelDiretorio que vc definir. #preferencia: bom somente para modulo que vai acessar varios modulos dentro de si mesmo, mas nao muito ideal para cruzamneto de uso de modulos. #antiManutencao semelhanteImportacaoNormal EsModules`,
     },
 
     conceito_evite_errar:
