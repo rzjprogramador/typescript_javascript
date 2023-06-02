@@ -13,6 +13,8 @@ const imports_by_Deps_subDeps = {
  1. cada pasta um indexador arquivoFora chamado deps||subDeps que puxa os modulos das subPastas
  1. dentro do deps||subDeps export * que vem do subModulo da pasta alvo.
  1. no deps ou subDeps ao importar tem que haver no maximo <./pasta> ONDE ESTOU /1_UMA_PASTA_ALVO
+ 1. no deps ou subDeps A IMPORTACAO É DE NO MINIMO 1 UMA PASTA 1 ARQUIVO POR EXPORTACAO/IMPORTACAO TOTAL.
+ 1. detalhe nos subModulos de nivelProfundo dentroDaPasta defina somente arquivosModulos soltos sem pasta.
   `,
 
   puxar_importacao_correta:
