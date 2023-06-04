@@ -8,6 +8,22 @@
     exemplo: 'export { modulo } from "caminho/"',
   },
   {
+    titulo: "importar e ja exportar as replicas de modulos",
+    linguagem: "typescript",
+    categoria: ["importacao_exportacao", "dependencias", "modulos"],
+    conceito: `
+    import_export_replicar_modulos: "ao inves de importar e depois criar nova var para uso das replicas, faz assim : exporta o endereco do modulo que traz tudo, , { extrai os artefatosAlvo as mkeNovaVariavel_ParaReplicaDeUso }"
+
+info: "as variaveis de replica após a keyword <as> são variaveis novas e elas que sera usadas pela app."
+
+convencao_nomear: nomear inicio como <mke : significa makeExternal>
+`,
+    exemplo: `
+    // objectValuesFN ============================================================
+export { objectValuesFN as mkeObjectValuesFN } from "https://raw.githubusercontent.com/rzjprogramador/lib_rzj_typescript/v1.0.0_objectsValueFN/main.ts";
+`,
+  },
+  {
     titulo: "importar em escopo ts",
     linguagem: "typescript",
     categoria: ["importacao_exportacao", "dependencias"],
