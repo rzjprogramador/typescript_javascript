@@ -2,7 +2,7 @@
 
 interface INomeacao {
   titulo: string;
-  categoriaTipoDePropriedade: string;
+  categoriasTipoDePropriedades: string[];
   conceito: string;
   na_definicao: string;
   membros: string;
@@ -11,16 +11,16 @@ interface INomeacao {
 
 const convencaoNomes: INomeacao[] = [
   {
-    titulo: "nomear_lib",
-    categoriaTipoDePropriedade: "arquivo_libs",
+    titulo: "nomear lib RZ",
+    categoriasTipoDePropriedades: ["arquivo_libs", "nomear lib RZ", ],
     conceito: "",
-    na_definicao: "<minuscoloENTIDADE> exemplos: [ <libRZ>, ]",
+    na_definicao: "<RZ_Libs_><Recurso> exemplo: RZ_Libs_Recurso",
     membros: "#not",
     ao_replicar: "#not",
   },
   {
     titulo: "nomear contratos types interfaces",
-    categoriaTipoDePropriedade: "code",
+    categoriasTipoDePropriedades: [ "code"],
     conceito: "definir com inicio I de interface, e replicar com inicio X .",
     na_definicao: "<I> IEntidade",
     membros: "#not",
@@ -28,7 +28,7 @@ const convencaoNomes: INomeacao[] = [
   },
   {
     titulo: "import_map variável",
-    categoriaTipoDePropriedade: "code",
+    categoriasTipoDePropriedades: [ "code"],
     conceito: "",
     na_definicao: '<@>, exemplos: ["@entidade", "exemplos: @externals", ]',
     membros: "#not",
@@ -36,7 +36,7 @@ const convencaoNomes: INomeacao[] = [
   },
   {
     titulo: "nomear_artefato_Base e artefato de distribuição lib",
-    categoriaTipoDePropriedade: "code",
+    categoriasTipoDePropriedades: [ "code"],
     conceito: "",
     na_definicao: "<_ underline> _baseEntidade",
     membros: "#not",
@@ -44,7 +44,7 @@ const convencaoNomes: INomeacao[] = [
   },
   {
     titulo: "nomeacao lib - funcionalidades",
-    categoriaTipoDePropriedade: "diretorio_lib",
+    categoriasTipoDePropriedades: [ "diretorio_lib"],
     conceito: "",
     na_definicao: "feature/ || featFuncionalidade",
     membros: "feature.ts",
@@ -52,7 +52,7 @@ const convencaoNomes: INomeacao[] = [
   },
   {
     titulo: "nomeação arquivo link em libs",
-    categoriaTipoDePropriedade: "arquivo_link_lib",
+    categoriasTipoDePropriedades: [ "arquivo_link_lib"],
     conceito:
       "links é um pré main com todos os links das features, que será puxado pelo main distribuir.  faça mesmo que por enquanto nao precise. #futuro",
     na_definicao: "links.ts",
@@ -61,7 +61,7 @@ const convencaoNomes: INomeacao[] = [
   },
   {
     titulo: "nomeação arquivo principal distribuidor lib",
-    categoriaTipoDePropriedade: "arquivo principal distribuidor",
+    categoriasTipoDePropriedades: [ "arquivo principal distribuidor"],
     conceito:
       "o principal que sempre vai representar lá fora é o main, aqui posso publicar do jeito que vao usar seja em objeto, em repasse de link de funções...vou puxar do links e distribuir a gosto e tipo de uso.",
     na_definicao: "main.ts",
@@ -70,7 +70,7 @@ const convencaoNomes: INomeacao[] = [
   },
   {
     titulo: "",
-    categoriaTipoDePropriedade: "",
+    categoriasTipoDePropriedades: [ ""],
     conceito: "",
     na_definicao: "",
     membros: "#not",
@@ -79,7 +79,7 @@ const convencaoNomes: INomeacao[] = [
   // modelo:
   // {
   //   titulo: "",
-  //   categoriaTipoDePropriedade: "",
+  //   categoriaTipoDePropriedade: [ ""],
   //   conceito: "",
   //   na_definicao: "",
   //   membros: "#not",
