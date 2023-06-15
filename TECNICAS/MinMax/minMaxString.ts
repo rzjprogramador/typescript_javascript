@@ -84,13 +84,13 @@ function exeString() {
 
 async function showResult() {
     try {
-        // console.log(await minString(await maxString(fakeFAILStringMax)))
+        console.log(await minString(await maxString(fakeFAILStringMax)))
         // -> [FAIL] As letras não podem ser MAIOR >> QUE O SETADO
 
         // console.log(await minString(await maxString(fakeFAILStringMin)))
         // -> [FAIL] As letras não podem ser MENOR >> QUE O SETADO
 
-        console.log(await minString(await maxString(fakeFAILStartSpecialCharactersInvalid)))
+        // console.log(await minString(await maxString(fakeFAILStartSpecialCharactersInvalid)))
         // -> [FAIL] "Ops... não pode iniciar com caracteres invalidos!"
 
         // TESTERS DE RESULTADOS OK
@@ -102,5 +102,8 @@ async function showResult() {
     }
 }
 showResult()
+
+
+
 
 export default 1
