@@ -24,8 +24,8 @@
     mensagem: "is not assignable to parameter of type 'never'.deno-ts(2345)",
     traducao: "não pode ser atribuído ao parâmetro do tipo 'nunca'",
     codigo: "deno-ts(2345)",
-    causa: "ARTFATO SEM INTERFACE TIPO",
+    causa: "O QUE VOCÊ ESTA TENTANDO PREENCHER NÃO ESTÁ TIPADO.",
     solucao: "CRIAR TIPO INTERFACE AO ARTEFATO PAI",
-    solucao_narrada: "",
+    solucao_narrada: "exemplo, se esta tentando preencher um array e este array não esta tipado vai dar este erro  -- solução tipe este array em questao.",
   },
 ];
