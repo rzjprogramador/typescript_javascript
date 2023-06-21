@@ -1,0 +1,7 @@
+Obter informações sobre a instalação: curl -sLf https://spacevim.org/install.sh | bash -s -- -h
+Para Instalar somente no NeoVim: curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
+Para Instalar somente no Vim: curl -sLf https/spacevim.org/install.sh | bash -s -- --install vim
+Para Instalar no Vim e no NeoVim: curl -sLf https://spacevim.org/install.sh | bash
+Verificar seu sistema possui todas as dependências necessárias: curl -sLf https://spacevim.org/install.sh | bash -s -- -c
+E se quiser desinstalar o SpaceVim: curl -sLf https://spacevim.org/install.sh | bash -s -- --uninstall
+

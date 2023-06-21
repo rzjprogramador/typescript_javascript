@@ -1,0 +1,42 @@
+const teclas_nvimRZ = [
+  {
+    categoria: "teclas",
+    contexto: "",
+    titulo: "",
+    codigo: "",
+    conceito: "teclas no vimscript puro começam com minusculo, no Nvim com api vim começam com Maiusculo",
+    obs: "#nulo",
+  },
+  {
+    categoria: "teclas",
+    contexto: "",
+    titulo: "tecla SETA PARA CIMA no Nvim com api vim",
+    codigo: "up",
+    conceito: "teclas no vimscript puro começam com minusculo, no Nvim com api vim começam com Maiusculo",
+    obs: "#nulo",
+  },
+  {
+    categoria: "teclas",
+    contexto: "",
+    titulo: "tecla SETA PARA BAIXO no Nvim com api vim",
+    codigo: "down",
+    conceito: "teclas no vimscript puro começam com minusculo, no Nvim com api vim começam com Maiusculo",
+    obs: "#nulo",
+  },
+  {
+    categoria: "teclas",
+    contexto: "",
+    titulo: "tecla SETA DIREITA no Nvim com api vim",
+    codigo: "Left",
+    conceito: "teclas no vimscript puro começam com minusculo, no Nvim com api vim começam com Maiusculo",
+    obs: "#nulo",
+  },
+  {
+    categoria: "teclas",
+    contexto: "",
+    titulo: "tecla SETA ESQUERDA no Nvim com api vim",
+    codigo: "Right",
+    conceito: "teclas no vimscript puro começam com minusculo, no Nvim com api vim começam com Maiusculo",
+    obs: "#nulo",
+  },
+];

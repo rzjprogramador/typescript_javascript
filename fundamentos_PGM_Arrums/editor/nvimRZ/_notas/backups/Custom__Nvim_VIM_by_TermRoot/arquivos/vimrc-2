@@ -1,0 +1,120 @@
+set nocompatible
+filetype off 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'dracula/vim'
+Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
+Plugin 'scrooloose/nerdtree'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'cj/vim-webdevicons'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'johngrib/vim-game-code-break'
+
+call vundle#end()
+filetype plugin indent on
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+"let g:airline_theme='violet'
+let g:neocomplete#enable_at_startup = 1
+
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+
+syntax on
+color dracula
+
+" Abre NERDTree automáticamente
+autocmd vimenter * NERDTree
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd vimenter * wincmd p
+"let g:NERDTreeDirArrowExpandable = '▸'
+"let g:NERDTreeDirArrowCollapsible = '▾'
+" let NERDTreeQuitOnOpen = 1
+
+let g:NERDTreeDirArrowExpandable = '✚'
+let g:NERDTreeDirArrowCollapsible = '➜'
+
+set nu!
+set encoding=utf8
+let g:airline_powerline_fonts = 1
+set guifont=FantasqueSansMono-Regular\ 13
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+let g:NERDTreeShowIgnoredStatus = 1
+let g:webdevicons_enable_nerdtree = 1
+
+nnoremap <c-s> :w<CR>
+inoremap <c-s> <Esc>:w<CR>l
+vnoremap <c-s> <Esc>:w<CR>
+
+nnoremap <c-q> :wq<CR>
+inoremap <c-q> <Esc>:wq<CR>l
+vnoremap <c-q> <Esc>:wq<CR>
+
+
+function! GenerateHTML()
+        call append(0, '<!DOCTYPE html>') 
+        call append(1, '<html lang="en">')             
+        call append(2, '   <head>') 
+        call append(3, '      <title>Bootstrap 4 Example</title>') 
+        call append(4, '      <meta charset="utf-8">') 
+        call append(5, '      <meta name="viewport" content="width=device-width, initial-scale=1">') 
+        call append(6, '      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">') 
+        call append(7, '      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>') 
+        call append(8, '      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>') 
+        call append(9, '      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>') 
+        call append(10, '   </head>') 
+        call append(11, '   <body>')                    
+        call append(12, '      <div class="container">') 
+        call append(13, '         <h1>My First Bootstrap Page</h1>') 
+        call append(14, '         <p>This is some text.</p>')      
+        call append(15, '      </div>') 
+        call append(16, '   </body>') 
+        call append(17, '</html>')
+endfunction
+
+autocmd BufNewFile  *.html  call  GenerateHTML()
+
+let c = 0
+
+for i in [1, 2, 3, 4]
+  let c += i
+endfor
+
+command ShowC echo c
+
+function! SetCode()
+	r~/.vim/myfiles/code.txt
+endfunction
+
+:command SetCode :call SetCode()
+
+nnoremap <C-b> :SetCode<CR> 
+inoremap <C-b> <Esc>:SetCode<CR>i
+vnoremap <C-b> <Esc>:SetCode<CR>
+
+if has('gui_running')
+	set guifont=Monospace\ 13
+endif
+
