@@ -16,11 +16,17 @@ type CreateFontesFN = (d: FontesArgs) => Promise<FontesModel>
 
 interface RepoFontes {
   _items?: FontesModel[]
+  create: (d: FontesArgs) => Promise<FontesModel>
   list: () => Promise<FontesModel[]>
 }
 
 const repoFontes: RepoFontes = {
   _items: [],
+
+  async create(d) {
+    await this._items?.push(d)
+    return await d
+  },
 
   async list() {
     return await this._items!
@@ -28,8 +34,7 @@ const repoFontes: RepoFontes = {
 }
 
 const createFontes: CreateFontesFN = async (d) => {
-  await repoFontes?._items?.push(d)
-  return await d
+  return await repoFontes?.create(d)
 }
 
 await createFontes(fakeArgsFontes.ONE)
