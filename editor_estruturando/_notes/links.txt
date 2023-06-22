@@ -14,3 +14,7 @@
 -- themasNvim: [
   titulo: "catppuccin" , link: "https://github.com/catppuccin/nvim",
 ]
+
+-- links_plugins: [
+  NERDCommenter : https://github.com/preservim/nerdcommenter
+]

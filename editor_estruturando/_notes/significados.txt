@@ -1,9 +1,0 @@
-# comandos para mapeamento vimsc
-[
-  todos_modos: noremap : (todos os modos) -- repare a diferença que é um <no antes do map no normal é um nno 2 n>
-
-  modo_normal: nnoremap
-  modo_edicao_insercao: inoremap
-  modo_visual: vnoremap
-
-]
