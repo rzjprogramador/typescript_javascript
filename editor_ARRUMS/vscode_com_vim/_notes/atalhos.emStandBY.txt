@@ -16,4 +16,30 @@
       "before": [ "c", "o", "d", "e"],
       "after": ["`", "`", "`", "#","t", "y", "p", "e", "s", "c", "r", "i", "p", "t", "\n","`", "`", "`"]
       // atalho < j 2vz > para mudar modos - obs: mesmo assim funciona o Esc
+},
+
+// COMENTAR LINHA
+	{
+		"key": "ctrl+\\",
+		"command": "editor.action.commentLine",
+		"when": "editorTextFocus && !editorReadonly",
+		"args": "comentario em linha -> default ctrl+k+ctrl+c"
+	},
+
+  // TENTANDO COPIAR PARA VSVIM REESCREVER : TODO AIDA NAO FUNCIONOU RECORTA AO INVES DE COMENTAR
+  {
+    "key": "ctrl+k+ctrl+c",
+    "command": "vim.remap",
+    "when": "inputFocus && vim.mode == 'Normal'",
+    "args": {
+      "after": ["c", "c"]
     },
+    "desc": "comentario em linha >> Remapeando da mapeada para { cc } -> default ctrl+/",
+  },
+
+// TOGGLE COMENTARIO EM LINHA - ORIGINAL
+{
+  "key": "ctrl+/",
+  "command": "editor.action.commentLine",
+  "when": "editorTextFocus && !editorReadonly"
+}
