@@ -1,0 +1,19 @@
+-- =====================================================================================
+-- BACKUPS DO KEYBINDINGS.JSON -- =========================================================
+}
+  "key": "ctrl+up",
+  "command": "editor.action.copyLinesUpAction",
+  "when": "editorTextFocus && !editorReadonly",
+  "args": "duplica > copia e cola selecionado linha abaixo - Copy Line Down -- default ctrl+shift+Alt+up"
+},
+
+-- EM STAND BY ======================================
+
+===================================================================================
+-- BACKUPS DO SEETINGS.JSON -- =========================================================
+
+ { // -- abreviações --
+      "before": [ "c", "o", "d", "e"],
+      "after": ["`", "`", "`", "#","t", "y", "p", "e", "s", "c", "r", "i", "p", "t", "\n","`", "`", "`"]
+      // atalho < j 2vz > para mudar modos - obs: mesmo assim funciona o Esc
+    },
