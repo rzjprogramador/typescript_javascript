@@ -4,14 +4,16 @@ const tests = [
     categoria: "tests",
     titulo: "",
     contexto: "",
-    detalhe: "",
+    conceito: "",
+    detalhes: "",
     link: "#todo",
   },
   {
     categoria: "tests",
     titulo: "obrigacao testar",
     contexto: "funcionalidade :: o que FAZ, o que TEM",
-    detalhe: ["O que a funcionalidade FAZ - marque como [ logic ]", "O que a funcionalidade TEM marque como [ props ]"],
+    conceito: "testar a lógica/formula o que a funcionalidade tem que resultar, faça o resultado e compare se ela está fazendo o que tem a missão de fazer",
+    detalhes: ["O que a funcionalidade FAZ - marque como [ logic ]", "O que a funcionalidade TEM marque como [ props ]"],
     link: "#todo",
   },
 
