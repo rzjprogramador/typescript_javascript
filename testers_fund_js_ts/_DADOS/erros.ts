@@ -28,4 +28,13 @@
     solucao: "CRIAR TIPO INTERFACE AO ARTEFATO PAI",
     solucao_narrada: "exemplo, se esta tentando preencher um array e este array não esta tipado vai dar este erro  -- solução tipe este array em questao.",
   },
+  {
+    titulo: "erro de retorno em <funcao arrow> quando for retornar diretamente um objeto",
+    mensagem: "is not assignable to parameter of type 'never'.deno-ts(2345)",
+    traducao: "Uma função cujo tipo declarado não é 'void' nem 'any' deve retornar um valor.deno-ts(2355)",
+    codigo: "deno-ts(2355)",
+    causa: "FALTA DE () PARENTESES ENVOLVENDO O OBJETO DIRETAMENTE RETORNADO",
+    solucao: "APÓS A ARROW FUNCTION => ENVOLVER ENTRE PARENTESES O OBJETO DIRETAMENTE RETORNADO.",
+    solucao_narrada: "Em uma funcao arrow => Se for devolver diretamente um objeto => envolva ele entre parenteses. ex: => ( { campo1, cmapo2 }) ",
+  },
 ];
