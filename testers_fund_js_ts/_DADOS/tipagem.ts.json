@@ -1,7 +1,0 @@
-[
-  {
-    "contexto": "tipar loop de linguagem <reduce>",
-    "exemplo": "(acc: string, validatorsFN: Function)",
-    "explicacao": "1º param é o acumulador tipar com o tipo que vai retornar os valores, 2º param tipar com o tipo Construtor do artefato que esta mandando repetir iterar, no exemplo estou mando iterar funcoes entao tipo como Function"
-  }
-]

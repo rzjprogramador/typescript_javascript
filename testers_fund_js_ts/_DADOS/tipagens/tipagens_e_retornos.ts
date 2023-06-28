@@ -1,5 +1,8 @@
 /*
 APRENDIZADO
+
+-- retornos tem tudo a ver com tipagens : afinal tipamos o que estamso retornando.
+
 -- Na checagem para pegar o erro no catch depois na checagem
 na origem é obrigatorio lançar um novo erro ex: throw new Error(feedback)
 
