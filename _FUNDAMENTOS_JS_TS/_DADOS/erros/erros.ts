@@ -9,6 +9,17 @@
     solucao_narrada: "",
   },
   {
+    titulo: "erro ao tentar tipar artefatos que retornam operadores.",
+    mensagem: "Operator 'OPERADOR USADO' cannot be applied to types [ VARIAVEIS QUE VC TENTOU TIPAR COM GENERICO ]",
+    traducao: "O operador 'OPERADOR USADO' não pode ser aplicado a tipos [ VARIAVEIS QUE VC TENTOU TIPAR COM GENERICO ]",
+    codigo: "deno-ts(2365)",
+    causa: `
+    Retornos que usam operadores não podem usar generics no artefato porque operadores ja tem seus tipos de retornos default nao podem ser substituidos que é a missão do generics é incompativel e tomará o erro : Operator 'OPERADOR USADO' cannot be applied to types
+    `,
+    solucao: "",
+    solucao_narrada: "",
+  },
+  {
     titulo: "erro_tempo_real >> se_possivel_indefinido",
     mensagem: "is possibly 'undefined'",
     traducao: "é possivel que seja indefinido a variavel pode nao existir",

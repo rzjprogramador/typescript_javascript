@@ -7,6 +7,11 @@ const significados = [
   },
   {
     categoria: "significados",
+    titulo: "dinamicos",
+    significados: ["substítuiveis", "flexíveis", "genericos", "decidirei no uso qual é"],
+  },
+  {
+    categoria: "significados",
     titulo: "lógica",
     significados: ["formula", "passo a passo", "implementação", "manipular operadores - principalmente lógicos", "gerar um resultado", "verdadeiro ou falso", "o que faz sentido",],
   },
