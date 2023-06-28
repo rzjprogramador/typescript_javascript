@@ -8,6 +8,13 @@ const tipagens_comuns_ts = [
     observacoes: "o que voce usou de retorno tem um tipo, entao use o seu tipo de origem na tipagem... motivação: sempre tipar ja me custou 1 dia de erros ao nao passar um param.",
   },
   {
+    titulo: "evite tipar com any :: faça genric e tipe com unknown",
+    categorias: ["tipagens_comuns_ts",],
+    contexto: "se ainda nao sei qual será o tipo, mas informarei no uso - use generic e tipe como unknown não tipe como any que pode ser qualquer coisa...porque nao será qualquer coisa terá um tipo flexivel usando generic, só começará por default desconhecido.",
+    conceito: "não tipe generico com any, tipe com ainda desconhecido <unknown>",
+    observacoes: "o que voce usou de retorno tem um tipo, entao use o seu tipo de origem na tipagem... motivação: sempre tipar ja me custou 1 dia de erros ao nao passar um param.",
+  },
+  {
     titulo: "tipar loop reduce ()",
     categorias: ["tipagens_comuns_ts",],
     contexto: "exemplo: (acc: unknown, validatorsFN: Function[])",
