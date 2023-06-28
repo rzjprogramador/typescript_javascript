@@ -1,6 +1,7 @@
 // deno-lint-ignore-file no-unused-vars
 /*
 -- Criação entidadeFabrica via tecnica FactoryFunction
+
 -- missao ter objetoPrototipal: é fundamental ter um objetoPrototipal de fabrica para ter acesso ao prototipo de fabrica do js e add membros neste prototipoque é o DNA de Objetos da linguagem e nao add em cada objeto novo os membros, senão posso ter milhoes de metodos repetidos, mas fazendo no prototipal DNA tenho somente um emtodo para todos deste tipo de objeto sempre que dele for recriado instancias.
 */
 
