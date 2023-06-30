@@ -1,0 +1,11 @@
+APRENDIZADO EXPORTACOES MYLIBS
+-- na montagem_da_Lib:
+- no main da lib : fazer um root re-exportador, nao criar novo objeto >> exportar tudo de cada modulo.
+
+-- No uso da Lib:
+- importar o artefato e importar tambem o type
+- assim as informacoes de jsdoc e o type usado em cada feature de modulo chega perfeitamente quanto no exportado quando na replica -> porque no main da lib exportou tudo nao criou outro objeto.
+
+-- EXTENDENDO BIBLIOTECAS DE TERCEIROS --
+-- arquivo .d.ts:
+- são para extender bibliotecas de terceiros, com a clausula declare NOME_DO_ARTEFATO||TIPO QUE VOU EXTENDER E DENTRO AS NOVAS PROPS | INTERFACE  NOVOS QUE EXTENDEREI.
