@@ -37,6 +37,6 @@ const instance1 = Entity1.create(inRequest1)
 
 // TesterConsole
 // Por ser protected readonly nao compila se tentar mudar sem metodo.
-instance1.args.c1 = 'foo'
+// instance1.args.c1 = 'foo' // da erro em realTime
 console.log(instance1)
 console.log(instance1.computavel())
