@@ -1,9 +1,7 @@
 // deno-lint-ignore-file no-unused-vars
-/*
--- Criação entidadeFabrica via CLASSE
 
--- missao ter objetoPrototipal: é fundamental ter um objetoPrototipal de fabrica para ter acesso ao prototipo de fabrica do js e add membros neste prototipoque é o DNA de Objetos da linguagem e nao add em cada objeto novo os membros, senão posso ter milhoes de metodos repetidos, mas fazendo no prototipal DNA tenho somente um emtodo para todos deste tipo de objeto sempre que dele for recriado instancias.
-*/
+// -- Criação entidadeFabrica via CLASSE
+
 type MembrosEntidade = {
   metodo1?: string
 }
@@ -29,11 +27,18 @@ class FactoryEntidade {
   }
 }
 
-const inputRequest = { campo1: 'valor Do campo1', campo2: 'bar' }
-
+// -- MAKER --
 const makeFactoryEntidade = (input: IProps) => new FactoryEntidade(input)
 
+// -- USO --
+const inputRequest = { campo1: 'valor Do campo1', campo2: 'bar' }
+
+// I-- NSTANCIAS --
 const instance1 = makeFactoryEntidade(inputRequest)
+
+// tentar mudar valor props sem metodo
+// como os campos sao privados - não acesso os campos fora e nem compila ao tentar.
+// instance1.campo1 = 'fooooooo'
 
 console.log(instance1)
 // console.log(instance1.metodo1())

@@ -12,7 +12,7 @@
     titulo: "criando entidade com primitivos via metodo statico da classe",
     categoria: ["POO", "criacional", "statico"],
     linguagem: "typescript",
-    macete: "os campos temq ue ser assinalados no construtor e no metodo igualmente, e aos instancias nao precisa apssar o do construtor só no metodo.",
+    macete: "os campos tem que ser assinalados no construtor e no metodo igualmente, e aos instancias nao precisa passar o do construtor só no metodo.",
     estrategia: "",
     passos_logicos: `
     # criando entidade com primitivos via metodo statico da classe:
