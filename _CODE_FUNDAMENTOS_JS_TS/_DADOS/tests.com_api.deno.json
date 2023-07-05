@@ -5,6 +5,11 @@
     "code": "expect(Promise.resolve(PROMESSA)).resolves.toEqual(RESULTADO_ESPERADO);"
   },
   {
+    "titulo": "testar promise rejeitada",
+    "categoria": "Com_Api_Expect",
+    "code": "expect(Promise.resolve(PROMESSA)).rejects.toEqual(RESULTADO_ESPERADO);"
+  },
+  {
     "titulo": "se é igual",
     "categoria": "Com_Api_Assert",
     "code": "assertEquals(target,\"O que espero que seja igual\",\"Ops.. MENSAGEM DE ERRO!\",)"
