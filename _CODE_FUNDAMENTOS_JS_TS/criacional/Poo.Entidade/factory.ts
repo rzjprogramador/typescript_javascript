@@ -33,7 +33,7 @@ class FactoryEntidade extends BaseEntityPerson<ArgsEntidade> {
 
   // members
   metodoInstancias() {
-    return `Ola sou metodo para todas istancias!`;
+    return `Ola sou metodo para todas istancias .. computando ${this.args.texto1} com ${this.args.texto2} computando numeros num1+num2 == >> ${this.args.num1 + this.args.num2} .`;
   }
 }
 
@@ -51,4 +51,9 @@ const request1 = {
 }
 
 // -- Uso Entidade --
-makerFactoryEntidade(request1).then((ok: any) => console.log(ok))
+// makerFactoryEntidade(request1).then((ok: any) => console.log(ok))
+
+const instancia1 = await makerFactoryEntidade(request1)
+
+console.log(instancia1)
+console.log(instancia1.metodoInstancias())
