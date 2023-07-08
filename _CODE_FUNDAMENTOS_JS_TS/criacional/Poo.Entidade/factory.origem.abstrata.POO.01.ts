@@ -49,11 +49,24 @@ const request1 = {
   num1: 10,
   num2: 20,
 }
+const request2 = {
+  texto1: 'texto_1_Request2',
+  texto2: 'texto_2_Request2',
+  num1: 10,
+  num2: 20,
+}
 
 // -- Uso Entidade --
 // makerFactoryEntidade(request1).then((ok: any) => console.log(ok))
 
 const instancia1 = await makerFactoryEntidade(request1)
+const instancia2 = await makerFactoryEntidade(request2)
 
 console.log(instancia1)
 console.log(instancia1.metodoInstancias())
+
+console.log(instancia2)
+console.log(instancia2.metodoInstancias())
+
+// verificando membros de instancia
+console.log(instancia1.metodoInstancias === instancia2.metodoInstancias) // R: true OK - aponta pro mesmo lugar na memoria
