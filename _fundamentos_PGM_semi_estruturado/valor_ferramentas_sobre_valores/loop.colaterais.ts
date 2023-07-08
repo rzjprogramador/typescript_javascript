@@ -17,7 +17,6 @@
     }
 
     // -- Response: 'rei' 10 true  :: o que mostrara a cada rodagem.
-    `
-
-  }
+    `,
+  },
 ]
