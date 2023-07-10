@@ -11,7 +11,7 @@ abstract class BaseEntityPerson<T> {
 }
 
 // -- Types --
-interface ArgsEntidade {
+interface ArgsEntidade extends MembersEntidade {
   ID?: string
   texto1: string
   texto2: string
@@ -19,9 +19,14 @@ interface ArgsEntidade {
   num2: number
 }
 
-// -- Factory apartir da Base --
+interface MembersEntidade {
+  metodoInstancias?: () => string
+}
+
+// -- Factory apartir da Base_Abstrata --
 
 class FactoryEntidade extends BaseEntityPerson<ArgsEntidade> {
+
   private constructor(args: ArgsEntidade, ID: string) {
     super(args, ID)
   }
@@ -29,6 +34,7 @@ class FactoryEntidade extends BaseEntityPerson<ArgsEntidade> {
   static async create(args: ArgsEntidade, ID?: string) {
     const entity = new FactoryEntidade(args, ID!)
     return await entity
+    // todo: se desempacotar o args aqui nao reconhece a computadocao dos membros.
   }
 
   // members
@@ -43,7 +49,7 @@ const makerFactoryEntidade = async (args: ArgsEntidade, ID?: string) => {
 }
 
 // -- requests --
-const request1 = {
+const request1: ArgsEntidade = {
   texto1: 'texto1',
   texto2: 'texto2',
   num1: 10,
@@ -63,10 +69,10 @@ const instancia1 = await makerFactoryEntidade(request1)
 const instancia2 = await makerFactoryEntidade(request2)
 
 console.log(instancia1)
-console.log(instancia1.metodoInstancias())
+console.log(instancia1?.metodoInstancias?.())
 
-console.log(instancia2)
-console.log(instancia2.metodoInstancias())
+// console.log(instancia2)
+// console.log(instancia2.metodoInstancias())
 
 // verificando membros de instancia
-console.log(instancia1.metodoInstancias === instancia2.metodoInstancias) // R: true OK - aponta pro mesmo lugar na memoria
+// console.log(instancia1.metodoInstancias === instancia2.metodoInstancias) // R: true OK - aponta pro mesmo lugar na memoria
