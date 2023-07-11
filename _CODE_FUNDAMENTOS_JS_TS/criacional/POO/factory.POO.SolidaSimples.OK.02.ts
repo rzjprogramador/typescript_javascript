@@ -65,6 +65,6 @@ tecnica Classe Factory SolidaSimples
 
 nao_precisa: definir metodo create statico nao precisa porque as instancia serao criadas pelo poloUnico makeCreateEntity() unico a ser exportado deste arquivo.
 
-membros: tem que ter instancia criada, a interface dos args extender os membros todos opcionais
+membros: tem que ter instancia criada, a interface dos args extender os membros todos opcionais.
 
 */
