@@ -1,5 +1,5 @@
 
-interface ArgsEntity extends MembersEntity {
+interface EntityModel extends MembersEntity {
   ID?: string
   text1: string
   text2: string
@@ -20,11 +20,11 @@ class Entity {
   public readonly num2!: number
   public readonly resultadoNum1Num2!: string
 
-  constructor(args: ArgsEntity) {
+  constructor(args: EntityModel) {
     Object.assign(this, args)
 
     if (!this.ID) {
-      this.ID = args?.ID || '1'
+      this.ID = this.defaultID()
     }
     // computando campos com metodos auxiliares
     this.resultadoNum1Num2 = this.membro2()
@@ -37,19 +37,23 @@ class Entity {
   membro2() {
     return `computando a soma dos campos num1+num2 resultado >> ${this.num1 + this.num2}`
   }
+
+  defaultID() {
+    return 'defaultID trazer a lib de ID aqui'
+  }
 }
 
-const makeCreateEntity = (args: ArgsEntity) => {
+const makeCreateEntity = (args: EntityModel) => {
   return new Entity(args)
 }
 
 // --Uso -- ----------------------------------------------
-const request1: ArgsEntity = {
+const request1: EntityModel = {
   text1: 'reinaldo', text2: 'programador', num1: 10, num2: 20,
 }
 
 const instance1 = makeCreateEntity(request1)
-// instance1.text1 = 'foo' // erro na compilacao -ao tentar reatribuir prop fora da classe >> porque a prop é  - somente leitura.
+// instance1.text1 = 'foo' // ok era para dar erro na compilacao e deu !
 
 console.log(instance1)
 console.log(instance1.text1)
@@ -63,8 +67,13 @@ APRENDIZADO:
 
 tecnica Classe Factory SolidaSimples
 
-nao_precisa: definir metodo create statico nao precisa porque as instancia serao criadas pelo poloUnico makeCreateEntity() unico a ser exportado deste arquivo.
+nao_precisa: "definir metodo create statico nao precisa porque as instancia serao criadas pelo poloUnico makeCreateEntity() unico a ser exportado deste arquivo."
 
-membros: tem que ter instancia criada, a interface dos args extender os membros todos opcionais.
+tecnicaID: "tecnica ID , na maker new criacao pelo construtor posso passar um ID no 2º param, util caso se  já ID de onde o arg estiver sendo migrado, ou seja ta chegando tendo um ID aproveito este id ou crio um novo [todo: fazer esta logica]",
+
+membros: "tem que ter instancia criada, a interface dos args extender os membros todos opcionais."
+
+definicoes:
+  prop_somenteLeitura: "assinlar com readonly :: para da erro na compilacao -> se por acidente tentarem reatribuir fora da classe sem metodo."
 
 */
