@@ -1,5 +1,4 @@
 // deno-lint-ignore-file no-unused-vars
-import { membersEntity } from "./members.ts";
 
 interface Args {
   c1: string
