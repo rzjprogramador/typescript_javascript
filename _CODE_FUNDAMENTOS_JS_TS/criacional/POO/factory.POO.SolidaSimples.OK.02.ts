@@ -5,6 +5,7 @@ interface EntityModel extends MembersEntity {
   text2: string
   num1: number
   num2: number
+  textStatico: string
 }
 
 interface MembersEntity {
@@ -20,11 +21,14 @@ class Entity {
   public readonly num2!: number
   public readonly resultadoNum1Num2!: string
 
+  static textStatico: string;
+
+
   constructor(args: EntityModel) {
     Object.assign(this, args)
 
     if (!this.ID) {
-      this.ID = this.defaultID()
+      this.ID = Entity.defaultID()
     }
     // computando campos com metodos auxiliares
     this.resultadoNum1Num2 = this.membro2()
@@ -38,8 +42,8 @@ class Entity {
     return `computando a soma dos campos num1+num2 resultado >> ${this.num1 + this.num2}`
   }
 
-  defaultID() {
-    return 'defaultID trazer a lib de ID aqui'
+  static defaultID() {
+    return `defaultID trazer a lib de ID aqui >> chamandoCampo >> ${Entity.textStatico}`
   }
 }
 
@@ -49,7 +53,7 @@ const makeCreateEntity = (args: EntityModel) => {
 
 // --Uso -- ----------------------------------------------
 const request1: EntityModel = {
-  text1: 'reinaldo', text2: 'programador', num1: 10, num2: 20,
+  text1: 'reinaldo', text2: 'programador', num1: 10, num2: 20, textStatico: 'Meu textoStatico'
 }
 
 const instance1 = makeCreateEntity(request1)
@@ -72,6 +76,9 @@ nao_precisa: "definir metodo create statico nao precisa porque as instancia sera
 tecnicaID: "tecnica ID , na maker new criacao pelo construtor posso passar um ID no 2º param, util caso se  já ID de onde o arg estiver sendo migrado, ou seja ta chegando tendo um ID aproveito este id ou crio um novo [todo: fazer esta logica]",
 
 membros: "tem que ter instancia criada, a interface dos args extender os membros todos opcionais."
+
+membros_utilitarios: "para ajudar a classe use membros static, para acesso ao membro chame o nome da classe ao inves do this.",
+todo: "como dentro do membroStatico acesso as props da classe, porenqunato tentando as props sendo staticas tbm só pegaria as staticas. ???"
 
 definicoes:
   prop_somenteLeitura: "assinlar com readonly :: para da erro na compilacao -> se por acidente tentarem reatribuir fora da classe sem metodo."
