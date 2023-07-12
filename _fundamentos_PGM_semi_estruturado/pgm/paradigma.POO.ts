@@ -7,7 +7,7 @@
     observacoes: "#null",
     exemplos: `
     class SuperTests {
-      // private constructor() { }
+      // constructor() { }
 
       /**
          * @description  catchMessageThrowNewError : captura e compara mensagem exata do lançamento de novo erro.
