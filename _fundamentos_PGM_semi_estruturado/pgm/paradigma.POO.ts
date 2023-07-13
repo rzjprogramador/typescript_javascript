@@ -31,7 +31,7 @@
   },
 
   {
-    titulo: "criar classe utlitaria podendo usar o this dentro dela e fornecendo um objeto maker para uso fora.",
+    titulo: "uso de classe utilitaria que usa o this, usando tecnica factoryMethod onde a propria classe se instancia.",
     categorias: ["configurador_de_objeto", "classe_utilitaria", "uso_this"],
     contexto: "o macete é pré instanciar a classe, e depois com a instancia fazer o objetivo ou usar o objeto ou usar o emtodo do objeto.",
     conceito: `

@@ -1,3 +1,4 @@
+// -- uso de classe utilitaria que usa o this, usando tecnica factoryMethod onde a propria classe se instancia.
 
 class Entity {
   private campo1!: number
