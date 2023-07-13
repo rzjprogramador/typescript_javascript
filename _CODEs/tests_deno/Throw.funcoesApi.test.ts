@@ -1,8 +1,6 @@
 // deno-lint-ignore-file no-constant-condition
 import { expect } from "https://deno.land/x/expect@v0.2.10/expect.ts";
 
-
-
 Deno.test({
   name: "[ async ] de forma  metodo .toThrow() confirma se a execucao da funcao lança um throw.",
   only: false,
