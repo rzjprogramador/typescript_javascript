@@ -13,6 +13,8 @@ class Entity {
   }
 }
 
+// o macete é pré instanciar a classe, e depois com a instancia fazer o objetivo ou usar o objeto ou usar o emtodo do objeto.
+
 const intanceEntity = async () => await new Entity()
 
 const makerEntity = await intanceEntity()
